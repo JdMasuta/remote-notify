@@ -22,7 +22,7 @@ with open('requirements-dev.txt') as f:
 
 setup(
     name="whisper-ssh",
-    version="1.0.1",
+    version="1.0.2",
     author="Josh Meesey",
     description="Whisper messages to remote Linux machines via SSH",
     long_description=long_description,
