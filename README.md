@@ -63,7 +63,7 @@ $ whisper-ssh
 ### Programmatic Usage
 
 ```python
-from remote_notify import RemoteNotificationManager
+from whisper_ssh import RemoteNotificationManager
 
 manager = RemoteNotificationManager()
 
