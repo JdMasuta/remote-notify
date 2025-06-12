@@ -13,6 +13,7 @@ from rich.panel import Panel
 from rich.text import Text
 
 from .core import RemoteNotificationManager
+from . import __version__
 
 
 class RemoteNotifyCLI:
@@ -491,16 +492,20 @@ class RemoteNotifyCLI:
 
 def main():
     """Main entry point for the CLI application."""
+    import argparse
+    
+    parser = argparse.ArgumentParser(description="Send desktop notifications to remote Linux machines via SSH")
+    parser.add_argument("--version", action="version", version=f"remote-notify {__version__}")
+    parser.add_argument("--config", help="Path to configuration file")
+    
+    # Parse arguments
+    args = parser.parse_args()
+    
     try:
-        cli = RemoteNotifyCLI()
+        cli = RemoteNotifyCLI(config_file=args.config)
         
-        # Check if we should run in interactive mode (default)
-        if len(sys.argv) == 1:
-            cli.run_interactive()
-        else:
-            # Future: Add command-line argument parsing for non-interactive mode
-            # For now, just run interactive mode
-            cli.run_interactive()
+        # For now, always run in interactive mode
+        cli.run_interactive()
             
     except KeyboardInterrupt:
         console = Console()
