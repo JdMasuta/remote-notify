@@ -31,7 +31,7 @@ pip install whisper-ssh
 whisper-ssh
 
 # Or use the short alias
-rnotify
+whisper
 ```
 
 ### First Run
@@ -220,7 +220,7 @@ pip install -e ".[dev]"
 pytest
 
 # Format code
-black remote_notify/
+black whisper-ssh/
 ```
 
 ## 📝 License
