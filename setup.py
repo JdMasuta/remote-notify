@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Setup script for remote-notify package.
+Setup script for whisper-ssh package.
 """
 
 from setuptools import setup, find_packages
@@ -21,18 +21,18 @@ with open('requirements-dev.txt') as f:
     dev_requirements = f.read().splitlines()
 
 setup(
-    name="remote-notify",
+    name="whisper-ssh",
     version="1.0.0",
     author="Your Name",
     author_email="your.email@example.com",
-    description="Send desktop notifications to remote Linux machines via SSH",
+    description="Whisper messages to remote Linux machines via SSH",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/remote-notify",
+    url="https://github.com/yourusername/whisper-ssh",
     project_urls={
-        "Bug Tracker": "https://github.com/yourusername/remote-notify/issues",
-        "Documentation": "https://github.com/yourusername/remote-notify#readme",
-        "Source Code": "https://github.com/yourusername/remote-notify",
+        "Bug Tracker": "https://github.com/yourusername/whisper-ssh/issues",
+        "Documentation": "https://github.com/yourusername/whisper-ssh#readme",
+        "Source Code": "https://github.com/yourusername/whisper-ssh",
     },
     packages=find_packages(),
     classifiers=[
@@ -61,12 +61,12 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "remote-notify=remote_notify.cli:main",
-            "rnotify=remote_notify.cli:main",  # Short alias
+            "whisper-ssh=whisper_ssh.cli:main",
+            "whisper=whisper_ssh.cli:main",  # Short alias
         ],
     },
     include_package_data=True,
     zip_safe=False,
-    keywords="ssh notification remote desktop linux ubuntu notify-send",
+    keywords="ssh notification remote desktop linux ubuntu notify-send whisper",
     platforms=["any"],
 )

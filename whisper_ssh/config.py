@@ -1,5 +1,5 @@
 """
-Configuration management for remote-notify.
+Configuration management for whisper-ssh.
 
 Handles loading, saving, and managing configuration data including
 hosts, users, and preset messages.
@@ -14,7 +14,7 @@ import os
 class ConfigManager:
     """Manages configuration data for remote notifications."""
     
-    DEFAULT_CONFIG_NAME = "remote_notify_config.json"
+    DEFAULT_CONFIG_NAME = "whisper_ssh_config.json"
     
     def __init__(self, config_file: Optional[str] = None):
         """
@@ -25,7 +25,7 @@ class ConfigManager:
         """
         if config_file is None:
             # Use user's home directory for system-wide installation
-            config_dir = Path.home() / ".config" / "remote-notify"
+            config_dir = Path.home() / ".config" / "whisper-ssh"
             config_dir.mkdir(parents=True, exist_ok=True)
             self.config_file = config_dir / self.DEFAULT_CONFIG_NAME
         else:

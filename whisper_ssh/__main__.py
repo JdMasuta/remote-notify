@@ -1,8 +1,8 @@
 """
-Main entry point for the remote-notify package.
+Main entry point for the whisper-ssh package.
 
 This allows the package to be run as a module:
-    python -m remote_notify
+    python -m whisper_ssh
 """
 
 from .cli import main

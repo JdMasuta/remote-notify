@@ -1,5 +1,5 @@
 """
-Command-line interface for remote-notify.
+Command-line interface for whisper-ssh.
 
 Provides interactive CLI for sending remote notifications.
 """
@@ -494,8 +494,8 @@ def main():
     """Main entry point for the CLI application."""
     import argparse
     
-    parser = argparse.ArgumentParser(description="Send desktop notifications to remote Linux machines via SSH")
-    parser.add_argument("--version", action="version", version=f"remote-notify {__version__}")
+    parser = argparse.ArgumentParser(description="Whisper messages to remote Linux machines via SSH")
+    parser.add_argument("--version", action="version", version=f"whisper-ssh {__version__}")
     parser.add_argument("--config", help="Path to configuration file")
     
     # Parse arguments

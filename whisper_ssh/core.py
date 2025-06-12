@@ -1,5 +1,5 @@
 """
-Core functionality for remote notifications.
+Core functionality for whisper-ssh.
 
 Contains the main RemoteNotificationManager class and related utilities.
 """

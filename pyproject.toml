@@ -3,9 +3,9 @@ requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "remote-notify"
+name = "whisper-ssh"
 dynamic = ["version"]
-description = "Send desktop notifications to remote Linux machines via SSH"
+description = "Whisper messages to remote Linux machines via SSH"
 readme = "README.md"
 license = {file = "LICENSE"}
 authors = [
@@ -32,7 +32,7 @@ classifiers = [
     "Operating System :: OS Independent",
     "Environment :: Console",
 ]
-keywords = ["ssh", "notification", "remote", "desktop", "linux", "ubuntu", "notify-send"]
+keywords = ["ssh", "notification", "remote", "desktop", "linux", "ubuntu", "notify-send", "whisper"]
 requires-python = ">=3.7"
 dependencies = [
     "fabric>=3.0.0",
@@ -59,24 +59,24 @@ test = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/remote-notify"
-Documentation = "https://github.com/yourusername/remote-notify#readme"
-Repository = "https://github.com/yourusername/remote-notify.git"
-"Bug Tracker" = "https://github.com/yourusername/remote-notify/issues"
-Changelog = "https://github.com/yourusername/remote-notify/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/yourusername/whisper-ssh"
+Documentation = "https://github.com/yourusername/whisper-ssh#readme"
+Repository = "https://github.com/yourusername/whisper-ssh.git"
+"Bug Tracker" = "https://github.com/yourusername/whisper-ssh/issues"
+Changelog = "https://github.com/yourusername/whisper-ssh/blob/main/CHANGELOG.md"
 
 [project.scripts]
-remote-notify = "remote_notify.cli:main"
-rnotify = "remote_notify.cli:main"
+whisper-ssh = "whisper_ssh.cli:main"
+whisper = "whisper_ssh.cli:main"
 
 [tool.setuptools]
-packages = ["remote_notify"]
+packages = ["whisper_ssh"]
 
 [tool.setuptools.dynamic]
-version = {attr = "remote_notify.__version__"}
+version = {attr = "whisper_ssh.__version__"}
 
 [tool.setuptools.package-data]
-remote_notify = ["py.typed"]
+whisper_ssh = ["py.typed"]
 
 [tool.black]
 line-length = 88
@@ -119,13 +119,13 @@ python_functions = ["test_*"]
 addopts = [
     "--strict-markers",
     "--strict-config",
-    "--cov=remote_notify",
+    "--cov=whisper_ssh",
     "--cov-report=html",
     "--cov-report=term-missing",
 ]
 
 [tool.coverage.run]
-source = ["remote_notify"]
+source = ["whisper_ssh"]
 omit = [
     "*/tests/*",
     "*/test_*.py",
