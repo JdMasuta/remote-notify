@@ -22,17 +22,16 @@ with open('requirements-dev.txt') as f:
 
 setup(
     name="whisper-ssh",
-    version="1.0.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    version="1.0.1",
+    author="Josh Meesey",
     description="Whisper messages to remote Linux machines via SSH",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/whisper-ssh",
+    url="https://github.com/JdMasuta/whisper-ssh",
     project_urls={
-        "Bug Tracker": "https://github.com/yourusername/whisper-ssh/issues",
-        "Documentation": "https://github.com/yourusername/whisper-ssh#readme",
-        "Source Code": "https://github.com/yourusername/whisper-ssh",
+        "Bug Tracker": "https://github.com/JdMasuta/whisper-ssh/issues",
+        "Documentation": "https://github.com/JdMasuta/whisper-ssh#readme",
+        "Source Code": "https://github.com/JdMasuta/whisper-ssh",
     },
     packages=find_packages(),
     classifiers=[

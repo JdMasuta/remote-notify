@@ -1,6 +1,6 @@
 # 📡 Remote Notify
 
-[![PyPI version](https://badge.fury.io/py/remote-notify.svg)](https://badge.fury.io/py/remote-notify)
+[![PyPI version](https://badge.fury.io/py/whisper-ssh.svg)](https://badge.fury.io/py/whisper-ssh)
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -21,14 +21,14 @@ Send desktop notifications to remote Linux machines via SSH with a beautiful, in
 ### Installation
 
 ```bash
-pip install remote-notify
+pip install whisper-ssh
 ```
 
 ### Usage
 
 ```bash
 # Interactive mode (recommended)
-remote-notify
+whisper-ssh
 
 # Or use the short alias
 rnotify
@@ -57,7 +57,7 @@ The tool will guide you through:
 ### Basic Usage (Interactive)
 
 ```bash
-$ remote-notify
+$ whisper-ssh
 ```
 
 ### Programmatic Usage
@@ -98,7 +98,7 @@ results = manager.send_notification_to_multiple_hosts(
 
 ## 🔧 Configuration
 
-Configuration is automatically stored in `~/.config/remote-notify/remote_notify_config.json`
+Configuration is automatically stored in `~/.config/whisper-ssh/remote_notify_config.json`
 
 ### Configuration Structure
 
@@ -210,8 +210,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/remote-notify.git
-cd remote-notify
+git clone https://github.com/JdMasuta/whisper-ssh.git
+cd whisper-ssh
 
 # Install in development mode
 pip install -e ".[dev]"
@@ -236,7 +236,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- **PyPI**: https://pypi.org/project/remote-notify/
-- **GitHub**: https://github.com/JdMasuta/remote-notify
-- **Issues**: https://github.com/JdMasuta/remote-notify/issues
-- **Documentation**: https://github.com/JdMasuta/remote-notify#readme
+- **PyPI**: https://pypi.org/project/whisper-ssh/
+- **GitHub**: https://github.com/JdMasuta/whisper-ssh
+- **Issues**: https://github.com/JdMasuta/whisper-ssh/issues
+- **Documentation**: https://github.com/JdMasuta/whisper-ssh#readme

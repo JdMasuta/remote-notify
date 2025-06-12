@@ -14,9 +14,8 @@ Command line usage:
     $ whisper  # short alias
 """
 
-__version__ = "1.0.0"
-__author__ = "Your Name"
-__email__ = "your.email@example.com"
+__version__ = "1.0.1"
+__author__ = "Josh Meesey"
 __license__ = "MIT"
 
 from .core import RemoteNotificationManager
@@ -32,8 +31,6 @@ __all__ = [
 # Package metadata
 __title__ = "whisper-ssh"
 __description__ = "Whisper messages to remote Linux machines via SSH"
-__url__ = "https://github.com/yourusername/whisper-ssh"
-__author_email__ = __email__
+__url__ = "https://github.com/JdMasuta/whisper-ssh"
 __maintainer__ = __author__
-__maintainer_email__ = __email__
-__keywords__ = ["ssh", "notification", "remote", "desktop", "linux", "ubuntu"]
+__keywords__ = ["ssh", "notification", "whisper", "remote", "desktop", "linux", "ubuntu"]
