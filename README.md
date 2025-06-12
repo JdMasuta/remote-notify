@@ -237,6 +237,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🔗 Links
 
 - **PyPI**: https://pypi.org/project/remote-notify/
-- **GitHub**: https://github.com/yourusername/remote-notify
-- **Issues**: https://github.com/yourusername/remote-notify/issues
-- **Documentation**: https://github.com/yourusername/remote-notify#readme
+- **GitHub**: https://github.com/JdMasuta/remote-notify
+- **Issues**: https://github.com/JdMasuta/remote-notify/issues
+- **Documentation**: https://github.com/JdMasuta/remote-notify#readme
