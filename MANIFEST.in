@@ -2,6 +2,6 @@ include README.md
 include LICENSE
 include requirements.txt
 include requirements-dev.txt
-recursive-include remote_notify *.py
+recursive-include whisper_ssh *.py
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]

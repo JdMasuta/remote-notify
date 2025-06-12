@@ -14,7 +14,7 @@ Command line usage:
     $ whisper  # short alias
 """
 
-__version__ = "1.0.2"
+__version__ = "1.1.0"
 __author__ = "Josh Meesey"
 __license__ = "MIT"
 
